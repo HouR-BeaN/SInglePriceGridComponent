@@ -1,0 +1,94 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  font-family: "Karla", sans-serif;
+}
+body {
+  background-color: var(--LightGray);
+  box-sizing: border-box;
+}
+.outside-cntnr {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.cntnr {
+  width: min(50%, 75rem);
+  display: grid;
+  grid-template-areas:
+    "top  top"
+    "left right";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.8fr 1fr;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hdr-cntnr {
+  grid-area: top;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+.hdr-cntnr p {
+  color: var(--GrayishBlue);
+}
+.sgnp-cntnr {
+  grid-area: left;
+  background-color: var(--Cyan);
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+}
+.sgnp-cntnr p,
+.sgnp-cntnr h3 {
+  color: #fff;
+}
+.sgnp-cntnr p {
+  font-weight: lighter;
+}
+.abt-cntnr p,
+.abt-cntnr h3 {
+  color: #fff;
+}
+.abt-cntnr p {
+  font-weight: 200;
+  font-size: normal;
+  padding-right: 20%;
+}
+strong {
+  font-size: 2em;
+}
+#sgnp-heading {
+  font-weight: bold;
+}
+#abt-heading {
+  font-weight: bold;
+}
+#permonth {
+  color: hsl(216, 21%, 81%);
+}
+.abt-cntnr {
+  grid-area: right;
+  background-color: hsla(179, 62%, 43%, 0.879);
+  padding: 20px;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+}
+h1 {
+  color: var(--Cyan);
+}
+#subheading {
+  color: var(--BrightYellow);
+}
+button {
+  background-color: var(--BrightYellow);
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: #fff;
+}
