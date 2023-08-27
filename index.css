@@ -122,11 +122,13 @@ button {
     grid-area: middle;
     background-color: var(--Cyan);
     border-radius: 0;
+    padding: 20px
   }
   .abt-cntnr {
     grid-area: bottom;
     text-align: left;
     border-bottom-left-radius: 10px;
+    padding: 20px;
   }
   h1 {
     font-size: 21.60px;
