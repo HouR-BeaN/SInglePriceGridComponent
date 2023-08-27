@@ -8,6 +8,7 @@
 body {
   background-color: var(--LightGray);
   box-sizing: border-box;
+  padding-top: 100px;
 }
 .outside-cntnr {
   display: flex;
@@ -30,16 +31,17 @@ body {
 .hdr-cntnr {
   grid-area: top;
   background-color: #fff;
-  padding: 20px;
+  padding: 20px 40px;
   border-radius: 10px 10px 0 0;
 }
 .hdr-cntnr p {
   color: var(--GrayishBlue);
+  font-size: 16px;
 }
 .sgnp-cntnr {
   grid-area: left;
   background-color: var(--Cyan);
-  padding: 20px;
+  padding: 20px 0 20px  40px;
   border-bottom-left-radius: 10px;
 }
 .sgnp-cntnr p,
@@ -55,8 +57,8 @@ body {
 }
 .abt-cntnr p {
   font-weight: 200;
-  font-size: normal;
-  padding-right: 20%;
+  font-size: 20px;
+  padding-right: 30%;
 }
 strong {
   font-size: 2em;
@@ -69,22 +71,25 @@ strong {
 }
 #permonth {
   color: hsl(216, 21%, 81%);
-}
-#fa-desc {
-  width: fit-content;
+  font-size: 20px;
 }
 .abt-cntnr {
   grid-area: right;
   background-color: hsla(179, 62%, 43%, 0.879);
-  padding: 20px;
+  padding: 20px 0 20px 40px;
   border-bottom-right-radius: 10px;
   text-align: left;
+  height: fit-content;
+  margin: auto 0;
 }
 h1 {
   color: var(--Cyan);
+  font-size: 25px;
 }
 #subheading {
   color: var(--BrightYellow);
+  font-weight: bold;
+  font-size: 20px;
 }
 button {
   background-color: var(--BrightYellow);
@@ -94,33 +99,67 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   color: #fff;
+  font-size: 16px;
 }
 
-@media only screen and (max-width: 375) {
+@media only screen and (max-width: 376px) {
   .cntnr {
-    width: min(50%, 75rem);
+    width: min(90%, 75rem);
     display: grid;
     grid-template-areas:
       "top "
       "middle"
       "bottom";
     grid-template-columns: 100%;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr ;
   }
   .hdr-cntnr {
     grid-area: top;
     background-color: #fff;
     padding: 20px;
-    border-radius: 10px 10px 0 0;
   }
   .sgnp-cntnr {
     grid-area: middle;
     background-color: var(--Cyan);
-    padding: 20px;
-    border-bottom-left-radius: 10px;
+    border-radius: 0;
   }
   .abt-cntnr {
     grid-area: bottom;
     text-align: left;
+    border-bottom-left-radius: 10px;
+  }
+  h1 {
+    font-size: 21.60px;
+  }
+  #subheading {
+    font-size: 18px;
+  }
+  .hdr-cntnr p {
+    font-size: 15px;
+  }
+  strong {
+    font-size: 31.10px;
+  }
+  .sgnp-cntnr p {
+    font-size: 18px;
+  }
+  button {
+    padding: 15px 0;
+    font-size: 15px;
+  }
+  #permonth {
+    font-size: 18px;
+  }
+  #abt-heading {
+    font-size: 18px;
+  }
+  .abt-cntnr p {
+    font-size: 15px;
+  }
+  .outside-cntnr {
+    padding: 50px 0;
+  }
+  body {
+    padding-top: 0;
   }
 }
